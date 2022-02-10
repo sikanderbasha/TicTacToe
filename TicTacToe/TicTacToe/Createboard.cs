@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace TicTacToe
 {
-    internal class CreateBoard
+    public class CreateBoard
     {
         public void Create()
         {
             char[] board = new char[10];
             for (int StartPoint = 0; StartPoint < board.Length; StartPoint++)
-                Console.WriteLine(board[StartPoint] = ' ');
+                board[StartPoint] = ' ';
         }
+
+        
     }
 }
